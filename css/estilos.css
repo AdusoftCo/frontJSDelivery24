@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+  
+  /* Navbar */
+  header {
+    padding: 0 6cm; /* 6 cm space on both sides */
+    background-color: rgba(255, 255, 255, 0); /* Transparent background */
+  }
+
+  nav {
+    background-color: #42403ed3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(36, 35, 35, 0.15);
+    padding: 19px 137px;
+    width: 100%; /* Ensures full width */
+    margin: 0; /* Remove side margins */
+  }
+
+  /* Logo */
+  nav img {
+    height: 40px;
+    margin-right: 20px;
+    border-radius: 10px;
+  }
+
+  /* Titulo */
+  nav h1 {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  /* Navbar links */
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+
+  nav a:hover {
+    background-color: #ffd904;
+    color: black;
+  }
+
+/* Center the main content */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.full-screen-article {
+  background-image: url('../imagenes/deliveryBike.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  z-index: 0;
+}
+.second-screen-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-image: url('../imagenes/deliveryPacks.jpeg'); /* Background image */
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* White text for contrast */
+  text-align: center;
+}
+.third-screen-article{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-size: cover;
+  background-position: center;
+  background-color: #2d09fa;
+  color: #fff; /* White text for contrast */
+  text-align: center;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  z-index: -1; 
+}
+/* Title styling */
+.title-container h1 {
+  margin-top: -270px;
+  margin-bottom: 50px; /* Space between title and subtitles */
+  color: #ffd904;
+  font-size: 2.5rem;
+}
+
+/* Subtitles container to arrange items in a row */
+.subtitles-container {
+  margin-top: -150px;
+  display: flex;
+  gap: 30px; /* Space between subtitles */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Individual service items */
+.service-item {
+  color: #2d09fa;
+  display: flex;
+  flex-direction: column; /* Icons above text */
+  align-items: center;
+  font-size: 1.2rem; /* Adjust font size */
+}
+
+.service-item i {
+  margin-bottom: 5px; /* Space between icon and text */
+  font-size: 2rem; /* Icon size */
+  color: #ffd904; /* Icon color */
+}
+
+/* Centered paragraph */
+.centered-paragraph {
+  font-family: 'Kanit', serif;
+  color: #2d09fa;
+  font-weight: 400;
+  font-size: 3rem; 
+  max-width: 600px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+.centered-paraf {
+  color: white;
+  font-size: 17px; 
+  font-weight: bold;
+  max-width: 600px;
+  margin-bottom: 20px;
+  line-height: 4.6;
+}
+.title-contacto {
+  color: #ffd904;
+  font-size: 1.5rem;
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+/* Links */
+.links {
+  margin-top: 30px;
+}
+.links a {
+  display: inline-block;
+  margin: 0 15px;
+  padding: 15px 30px; /* Adjust for button size */
+  text-decoration: none;
+  color: #fff; /* White text */
+  background-color: #ff0000; /* Button background color */
+  font-weight: bold;
+  border-radius: 15px; /* Rounded corners */
+  transition: background-color 0.3s;
+}
+
+/* Hover effect */
+.links a:hover {
+  background-color: #ffd904;
+  color: black;
+}
+
+/* Make the second link larger */
+.links a:nth-child(2) {
+  padding: 15px 30px; /* Larger padding for a bigger button */
+}
+
+/* Section for image and description */
+.image-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  margin-top: 40px;
+}
+
+.image-section img {
+  max-width: 100px;
+  margin-right: 20px;
+}
+
+.image-description {
+  max-width: 600px;
+  text-align: left;
+  line-height: 1.6;
+}
+/* Center the form container */
+.form-container {
+  width: 80%; /* Control the form container width */
+  max-width: 600px; /* Max width for larger screens */
+  margin: 0 auto; /* Center horizontally */
+  padding: 20px;
+}
+
+/* Form labels */
+form label {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #fff; /* Label text color */
+  display: block;
+  text-align: left; /* Align labels to the left */
+}
+
+/* Input fields and textarea */
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form textarea {
+  width: 100%; /* Full width within container */
+  padding: 12px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #333;
+}
+
+/* Textarea specific styling */
+form textarea {
+  resize: vertical; /* Resizable only vertically */
+  min-height: 120px;
+}
+
+/* Center and style the button */
+.button-container {
+  text-align: center;
+}
+
+.button-container button {
+  margin-bottom: 5rem;
+  padding: 12px 30px;
+  font-size: 1rem;
+  background-color: #ffd904;
+  color: #333;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-container button:hover {
+  background-color: #ff0000;
+  color: white;
+}
+
+/* Footer styling */
+.footer-dropdown {
+    background-color: #100458;
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+  }
+
+  .footer-dropdown .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .footer-iconos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    margin-top: 60px;
+    
+  }
+  p {
+    padding-bottom: 10px;
+  }
+     
+  /* Social Icons */
+  .social-icons {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .social-icons a {
+    color: #ffd904;
+    margin: 0 15px;
+    font-size: 2rem;
+  }
+
+  /* Footer text */
+  .footer-text {
+    text-align: center;
+    margin-top: 20px;
+    color: #ddd;
+    font-size: 0.8rem;
+  }

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        .third-screen-article {
+            height: 130vh;
+            background-color: #2d09fa;
+            flex-grow: 1; /* Allow it to expand if needed */
+            overflow: visible; /* Avoid clipping */
+            padding: 0 20px; /* Add some spacing */
+        }
+
+        .title-container {
+            margin-top: 10rem; /* Space from the top */
+            padding: 10px;
+            text-align: center;
+            color: #ffd904; /* Gold text */
+            font-size: 2rem; /* Readable title size */
+            z-index: 100;
+            position: relative; /* Required for stacking context */
+        }
+
+        .title-container h1 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: #ffd904; /* Match title color */
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Align content at the top */
+            align-items: center;
+            min-height: 100vh; /* Ensure it covers the full viewport height */
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            margin: 0; /* Ensure no bottom margin */
+            padding: 0; /* Reset padding */
+        }
+        .form-container {
+            margin: 0 auto; /* Center the form horizontally */
+            margin-top: 20px;
+            width: 100%;
+            max-width: 500px;
+            padding: 20px;
+            
+            border-radius: 10px;
+            color: white;
+            box-sizing: border-box; /* Include padding and border in the width */
+        }
+
+        /* Footer styles to ensure proper placement */
+        footer {
+            padding: 20px 0;
+            background-color: black; /* Match the website's style */
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="imagenes/na_january_20.jpg" alt="Logo">
+            <h1>On Delivery</h1>
+            <a href="index.html">Inicio</a>
+            <a href="index.html#servicios">Servicios</a>
+            <a href="index.html#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <article class="third-screen-article">
+            <div class="title-container">
+                <h1>Contactanos</h1>
+            </div>
+            <!-- Formulario -->
+            <div class="form-container">
+                <form action="https://formspree.io/f/xeoqkzal" method="POST">
+                    
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="lastname">Apellido</label>
+                    <input type="text" id="lastname" name="lastname" required>
+                
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Telefono</label>
+                    <input type="number" id="phone" name="phone" required>
+                
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" rows="3" required></textarea>
+                    
+                    <div class="button-container">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer-dropdown">
+        <div class="container">
+            
+            <div class="footer-iconos">
+                <p><i class="fas fa-map-marker-alt"></i>Argentina (1031) C.A.B.A.</p>
+                <p><i class="fas fa-phone"></i>11 5653-2820</p>
+                <p><i class="fas fa-envelope"></i>info_2024@hotmail.com</p>
+            </div>
+  
+            <!-- Social Icons -->
+            <div class="social-icons">
+                <a href="https://facebook.com/oaduviri" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/5491150511072" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        
+            <!-- Footer Text -->
+            <div class="footer-text">
+                <p>On Delivery 2024 @ Todos los derechos reservados</p>
+                <p>Diseñado por Adusoft <span style="color:#f50707; font-weight: bold;">❤</span></p>
+            </div>
+        </div>    
+    </footer>
+</body>
+</html>

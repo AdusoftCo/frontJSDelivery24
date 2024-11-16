@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front JS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" type="image/x-icon" href="imagenes/favicon-32x32.png">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <img src="imagenes/na_january_20.jpg" alt="Logo">
+            <h1>On Delivery</h1>
+            <a href="">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Primer Pantalla -->
+        <article class="full-screen-article">
+            
+            <!-- Centered paragraph -->
+            <h1 class="centered-paragraph">
+                Servicios <span style="color: #ffd904;">de delivery</span>
+            </h1>
+            <h1 class="centered-paragraph">
+                las 24 hs.
+            </h1>
+            <p class="centered-paraf">
+                Nos dedicamos a la logística integral, <span style="color: #2d09fa;">con servicios de delivery y envíos.</span> 
+            </p>
+            <!-- Centered links below the paragraph -->
+            <div class="links">
+                <a href="#contacto">Contactanos</a>
+                <a href="contacto.html">Unete al Equipo</a>
+            </div>
+        </article>
+
+        <!-- Segunda Pantalla -->
+        <div id="anchor-spacer" style="height: 0px; visibility: hidden;"></div>
+        <article class="second-screen-article" id="servicios">
+            <div class="title-container">
+                <h1>Tipos de Servicios</h1>
+            </div>
+
+            <div class="subtitles-container">
+                <div class="service-item">
+                    <i class="fas fa-motorcycle"></i>
+                    <span>Servicios de Delivery</span>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>Servicios de Mensajeria</span>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-box"></i>
+                    <span>Servicios de Envio e-commerce</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Tercer Pantalla -->
+        
+        <article class="third-screen-article" id="contacto">
+            <div class="title-contacto">
+                <h1>Contactanos</h1>
+            </div>
+            <!-- Formulario -->
+            <div class="form-container">
+                <form action="https://formspree.io/f/xeoqkzal" method="POST">
+                    
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" required>
+                
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" rows="3" required></textarea>
+                    
+                    <div class="button-container">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer-dropdown">
+        <div class="container">
+            
+            <div class="footer-iconos">
+                <p><i class="fas fa-map-marker-alt"></i>Argentina (1031) C.A.B.A.</p>
+                <p><i class="fas fa-phone"></i>11 5653-2820</p>
+                <p><i class="fas fa-envelope"></i>info_2024@hotmail.com</p>
+            </div>
+  
+            <!-- Social Icons -->
+            <div class="social-icons">
+                <a href="https://facebook.com/oaduviri" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/5491150511072" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        
+            <!-- Footer Text -->
+            <div class="footer-text">
+                <p>On Delivery 2024 @ Todos los derechos reservados</p>
+                <p>Diseñado por Adusoft <span style="color:#f50707; font-weight: bold;">❤</span></p>
+            </div>
+        </div>    
+    </footer>
+    
+</body>
+</html>
