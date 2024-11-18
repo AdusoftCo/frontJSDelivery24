@@ -10,43 +10,43 @@
         .third-screen-article {
             height: 130vh;
             background-color: #2d09fa;
-            flex-grow: 1; /* Allow it to expand if needed */
-            overflow: visible; /* Avoid clipping */
-            padding: 0 20px; /* Add some spacing */
+            flex-grow: 1;
+            overflow: visible;
+            padding: 0 20px;
         }
 
         .title-container {
-            margin-top: 10rem; /* Space from the top */
+            margin-top: 10rem;
             padding: 10px;
             text-align: center;
-            color: #ffd904; /* Gold text */
-            font-size: 2rem; /* Readable title size */
+            color: #ffd904;
+            font-size: 2rem;
             z-index: 100;
-            position: relative; /* Required for stacking context */
+            position: relative;
         }
 
         .title-container h1 {
             margin: 0;
             font-size: 1.5rem;
-            color: #ffd904; /* Match title color */
+            color: #ffd904;
         }
 
         main {
             display: flex;
             flex-direction: column;
-            justify-content: flex-start; /* Align content at the top */
+            justify-content: flex-start;
             align-items: center;
-            min-height: 100vh; /* Ensure it covers the full viewport height */
+            min-height: 100vh;
             margin: 0;
             padding: 0;
         }
 
         form {
-            margin: 0; /* Ensure no bottom margin */
-            padding: 0; /* Reset padding */
+            margin: 0;
+            padding: 0;
         }
         .form-container {
-            margin: 0 auto; /* Center the form horizontally */
+            margin: 0 auto;
             margin-top: 20px;
             width: 100%;
             max-width: 500px;
@@ -54,27 +54,31 @@
             
             border-radius: 10px;
             color: white;
-            box-sizing: border-box; /* Include padding and border in the width */
+            box-sizing: border-box;
         }
 
-        /* Footer styles to ensure proper placement */
+        /* Footer */
         footer {
             padding: 20px 0;
-            background-color: black; /* Match the website's style */
+            background-color: black;
             color: white;
             text-align: center;
         }
     </style>
 </head>
 
+<!-- Cpmiemzo -->
 <body>
     <header>
         <nav>
             <img src="imagenes/na_january_20.jpg" alt="Logo">
             <h1>On Delivery</h1>
-            <a href="index.html">Inicio</a>
-            <a href="index.html#servicios">Servicios</a>
-            <a href="index.html#contacto">Contacto</a>
+            <!-- Buttons Main -->
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="index.html#servicios">Servicios</a>
+                <a href="index.html#contacto">Contacto</a>
+            </div>
         </nav>
     </header>
 
@@ -110,6 +114,7 @@
         </article>
     </main>
 
+    <!-- Footer Pantalla -->
     <footer class="footer-dropdown">
         <div class="container">
             

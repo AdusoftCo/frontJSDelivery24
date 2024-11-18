@@ -1,9 +1,10 @@
+/* Estilos PC */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  body, html {
+}
+body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,58 +12,64 @@
     font-family: Arial, sans-serif;
 }
   
-  /* Navbar */
-  header {
-    padding: 0 6cm; /* 6 cm space on both sides */
-    background-color: rgba(255, 255, 255, 0); /* Transparent background */
-  }
+/* Navbar */
+header {
+  padding: 0 96px;
+  background-color: rgba(255, 255, 255, 0);
+}
 
-  nav {
-    background-color: #42403ed3;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(36, 35, 35, 0.15);
-    padding: 19px 137px;
-    width: 100%; /* Ensures full width */
-    margin: 0; /* Remove side margins */
-  }
+nav {
+  background-color: #42403ed3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(36, 35, 35, 0.15);
+  padding: 19px 137px;
+  width: 100%;
+  margin: 0;
+  gap: 20px;
+}
 
-  /* Logo */
-  nav img {
-    height: 40px;
-    margin-right: 20px;
-    border-radius: 10px;
-  }
+/* Logo */
+nav img {
+  height: 40px;
+  border-radius: 10px;
+}
 
-  /* Titulo */
-  nav h1 {
-    color: #fff;
-    font-size: 1.5rem;
-    text-align: center;
-  }
+/* Title */
+nav h1 {
+  color: #fff;
+  font-size: 1.5rem;
+  flex: 1;
+  text-align: center;
+}
 
-  /* Navbar links */
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 20px;
-    padding: 8px 15px;
-    border-radius: 5px;
-    transition: background 0.3s;
-  }
+/* Navbar links */
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
 
-  nav a:hover {
-    background-color: #ffd904;
-    color: black;
-  }
+nav a:hover {
+  background-color: #ffd904;
+  color: black;
+}
 
-/* Center the main content */
+nav .nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+/* main */
 main {
   display: flex;
   justify-content: center;
@@ -100,11 +107,11 @@ article {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full viewport height */
-  background-image: url('../imagenes/deliveryPacks.jpeg'); /* Background image */
+  height: 100vh;
+  background-image: url('../imagenes/deliveryPacks.jpeg');
   background-size: cover;
   background-position: center;
-  color: #fff; /* White text for contrast */
+  color: #fff;
   text-align: center;
 }
 .third-screen-article{
@@ -112,11 +119,11 @@ article {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full viewport height */
+  height: 100vh;
   background-size: cover;
   background-position: center;
   background-color: #2d09fa;
-  color: #fff; /* White text for contrast */
+  color: #fff;
   text-align: center;
 }
 
@@ -129,36 +136,36 @@ article {
   object-fit: cover; 
   z-index: -1; 
 }
-/* Title styling */
+/* Title */
 .title-container h1 {
   margin-top: -270px;
-  margin-bottom: 50px; /* Space between title and subtitles */
+  margin-bottom: 50px;
   color: #ffd904;
   font-size: 2.5rem;
 }
 
-/* Subtitles container to arrange items in a row */
+/* Subtitles*/
 .subtitles-container {
   margin-top: -150px;
   display: flex;
-  gap: 30px; /* Space between subtitles */
+  gap: 30px;
   justify-content: center;
   align-items: center;
 }
 
-/* Individual service items */
+/* Service items */
 .service-item {
   color: #2d09fa;
   display: flex;
-  flex-direction: column; /* Icons above text */
+  flex-direction: column;
   align-items: center;
-  font-size: 1.2rem; /* Adjust font size */
+  font-size: 1.2rem;
 }
 
 .service-item i {
-  margin-bottom: 5px; /* Space between icon and text */
-  font-size: 2rem; /* Icon size */
-  color: #ffd904; /* Icon color */
+  margin-bottom: 5px;
+  font-size: 2rem;
+  color: #ffd904;
 }
 
 /* Centered paragraph */
@@ -185,34 +192,34 @@ article {
   margin-top: 120px;
   margin-bottom: 50px;
 }
-/* Links */
+
+/* Buttons Main */
 .links {
   margin-top: 30px;
 }
 .links a {
   display: inline-block;
   margin: 0 15px;
-  padding: 15px 30px; /* Adjust for button size */
+  padding: 15px 30px;
   text-decoration: none;
-  color: #fff; /* White text */
-  background-color: #ff0000; /* Button background color */
+  color: #fff;
+  background-color: #ff0000;
   font-weight: bold;
-  border-radius: 15px; /* Rounded corners */
+  border-radius: 15px;
   transition: background-color 0.3s;
 }
 
-/* Hover effect */
+/* Hover */
 .links a:hover {
   background-color: #ffd904;
   color: black;
 }
 
-/* Make the second link larger */
 .links a:nth-child(2) {
-  padding: 15px 30px; /* Larger padding for a bigger button */
+  padding: 15px 30px;
 }
 
-/* Section for image and description */
+/* Section Image */
 .image-section {
   display: flex;
   align-items: center;
@@ -231,11 +238,12 @@ article {
   text-align: left;
   line-height: 1.6;
 }
-/* Center the form container */
+
+/* Form container */
 .form-container {
-  width: 80%; /* Control the form container width */
-  max-width: 600px; /* Max width for larger screens */
-  margin: 0 auto; /* Center horizontally */
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
   padding: 20px;
 }
 
@@ -243,17 +251,17 @@ article {
 form label {
   font-size: 1.2rem;
   margin-bottom: 8px;
-  color: #fff; /* Label text color */
+  color: #fff;
   display: block;
-  text-align: left; /* Align labels to the left */
+  text-align: left;
 }
 
-/* Input fields and textarea */
+/* Input fields, textarea */
 form input[type="text"],
 form input[type="email"],
 form input[type="number"],
 form textarea {
-  width: 100%; /* Full width within container */
+  width: 100%;
   padding: 12px;
   font-size: 1rem;
   margin-bottom: 20px;
@@ -263,13 +271,13 @@ form textarea {
   color: #333;
 }
 
-/* Textarea specific styling */
+/* Textarea */
 form textarea {
-  resize: vertical; /* Resizable only vertically */
+  resize: vertical;
   min-height: 120px;
 }
 
-/* Center and style the button */
+/* Button */
 .button-container {
   text-align: center;
 }
@@ -291,7 +299,7 @@ form textarea {
   color: white;
 }
 
-/* Footer styling */
+/* Footer */
 .footer-dropdown {
     background-color: #100458;
     color: #fff;
