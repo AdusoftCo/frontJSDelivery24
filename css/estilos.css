@@ -35,13 +35,13 @@ nav {
   gap: 20px;
 }
 
-/* Logo */
+/* Navbar Logo */
 nav img {
   height: 40px;
   border-radius: 10px;
 }
 
-/* Title */
+/* Navbar Title */
 nav h1 {
   color: #fff;
   font-size: 1.5rem;
@@ -136,7 +136,7 @@ article {
   object-fit: cover; 
   z-index: -1; 
 }
-/* Title */
+/* Second Screen Title */
 .title-container h1 {
   margin-top: -270px;
   margin-bottom: 50px;
@@ -144,7 +144,7 @@ article {
   font-size: 2.5rem;
 }
 
-/* Subtitles*/
+/* Second Screen Subtitles */
 .subtitles-container {
   margin-top: -150px;
   display: flex;
@@ -153,7 +153,7 @@ article {
   align-items: center;
 }
 
-/* Service items */
+/* Second Screen Service items */
 .service-item {
   color: #2d09fa;
   display: flex;
@@ -168,7 +168,7 @@ article {
   color: #ffd904;
 }
 
-/* Centered paragraph */
+/* Second Screen Centered paragraph */
 .centered-paragraph {
   font-family: 'Kanit', serif;
   color: #2d09fa;
@@ -193,7 +193,7 @@ article {
   margin-bottom: 50px;
 }
 
-/* Buttons Main */
+/* Second Screen Buttons */
 .links {
   margin-top: 30px;
 }
@@ -209,7 +209,7 @@ article {
   transition: background-color 0.3s;
 }
 
-/* Hover */
+/* Second Screen Hover Buttons*/
 .links a:hover {
   background-color: #ffd904;
   color: black;
@@ -219,7 +219,7 @@ article {
   padding: 15px 30px;
 }
 
-/* Section Image */
+/* Second Screen Image */
 .image-section {
   display: flex;
   align-items: center;
@@ -324,7 +324,7 @@ form textarea {
     padding-bottom: 10px;
   }
      
-  /* Social Icons */
+  /* Footer Social Icons */
   .social-icons {
     text-align: center;
     margin-top: 10px;
