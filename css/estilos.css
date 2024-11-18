@@ -143,6 +143,31 @@ article {
   color: #ffd904;
   font-size: 2.5rem;
 }
+/* First Screen Buttons */
+.links {
+  margin-top: 30px;
+}
+.links a {
+  display: inline-block;
+  margin: 0 15px;
+  padding: 15px 30px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff0000;
+  font-weight: bold;
+  border-radius: 15px;
+  transition: background-color 0.3s;
+}
+
+/* First Screen Hover Buttons*/
+.links a:hover {
+  background-color: #ffd904;
+  color: black;
+}
+
+.links a:nth-child(2) {
+  padding: 15px 30px;
+}
 
 /* Second Screen Subtitles */
 .subtitles-container {
@@ -155,17 +180,25 @@ article {
 
 /* Second Screen Service items */
 .service-item {
+  background-color: rgba(255, 255, 255, 0.103);
   color: #2d09fa;
   display: flex;
   flex-direction: column;
+  border-radius: 20px;
   align-items: center;
   font-size: 1.2rem;
+}
+.service-item:hover {
+  color: #ffd904;
 }
 
 .service-item i {
   margin-bottom: 5px;
   font-size: 2rem;
   color: #ffd904;
+}
+.service-item i:hover {
+  color: #2d09fa;
 }
 
 /* Second Screen Centered paragraph */
@@ -191,32 +224,6 @@ article {
   font-size: 1.5rem;
   margin-top: 120px;
   margin-bottom: 50px;
-}
-
-/* Second Screen Buttons */
-.links {
-  margin-top: 30px;
-}
-.links a {
-  display: inline-block;
-  margin: 0 15px;
-  padding: 15px 30px;
-  text-decoration: none;
-  color: #fff;
-  background-color: #ff0000;
-  font-weight: bold;
-  border-radius: 15px;
-  transition: background-color 0.3s;
-}
-
-/* Second Screen Hover Buttons*/
-.links a:hover {
-  background-color: #ffd904;
-  color: black;
-}
-
-.links a:nth-child(2) {
-  padding: 15px 30px;
 }
 
 /* Second Screen Image */
