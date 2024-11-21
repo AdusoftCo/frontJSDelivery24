@@ -45,8 +45,9 @@ nav img {
 
 /* Navbar Title */
 nav h1 {
+  font-family: Kanit, serif;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 2rem;
   flex: 1;
   text-align: center;
 }
