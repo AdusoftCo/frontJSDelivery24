@@ -71,6 +71,15 @@ nav .nav-links {
   display: flex;
   gap: 20px;
 }
+.delivery-image {
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  display: inline-block;
+}
+.delivery-image:hover {
+  background-color: #ffd904;
+}
 
 /* main */
 main {
